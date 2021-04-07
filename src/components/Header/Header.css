@@ -1,0 +1,27 @@
+.header {
+    background-color: #400CCC;
+}
+.logo {
+    font-family: "Work Sans, sans-serif";
+    font-weight: 600;
+    color: "#FEFEFE";
+    text-align: "left"
+}
+.menuButton {
+    font-family: "Open Sans, sans-serif";
+    font-weight: 700;
+    size: 18px;
+    margin-left: 38px
+}
+.toolbar {
+    margin-left: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.drawerContainer {
+    padding: 20px 30px;
+}
+.menuItems {
+    color: black;
+}
