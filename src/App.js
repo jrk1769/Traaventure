@@ -1,14 +1,13 @@
 import Navbar from "./components/Header/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path="/" exact />
-        </Switch>
+        <Footer />
       </Router>
     </>
   );
