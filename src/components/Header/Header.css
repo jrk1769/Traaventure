@@ -1,17 +1,31 @@
-.header {
-    background-color: #400CCC;
+
+
+.scrolled {
+    background-color: black;
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+    color: white;
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
 }
+
 .logo {
     font-family: "Work Sans, sans-serif";
     font-weight: 600;
-    color: "#FEFEFE";
+    color: white;
     text-align: "left"
 }
 .menuButton {
     font-family: "Open Sans, sans-serif";
     font-weight: 700;
     size: 18px;
-    margin-left: 38px
+    margin-left: 38px;
 }
 .toolbar {
     margin-left: 5%;
@@ -23,5 +37,5 @@
     padding: 20px 30px;
 }
 .menuItems {
-    color: black;
+    color: white;
 }

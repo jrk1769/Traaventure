@@ -3,7 +3,6 @@ import {
     AppBar,
     Toolbar,
     Typography,
-    makeStyles,
     Button,
     IconButton,
     Drawer,
@@ -110,7 +109,7 @@ export default function Header() {
                     {...{
                         component: RouterLink,
                         to: href,
-                        // color: "black",
+                        color: "inherit",
                         style: { textDecoration: "none" },
                         key: label,
                     }}
@@ -124,13 +123,12 @@ export default function Header() {
     const getMenuButtons = () => {
         return headersData.map(({ label, href }) => {
             return (
-                <Button
+                <Button style={{ color: "white" }}
                     {...{
                         key: label,
-                        color: "inherit",
                         to: href,
                         component: RouterLink,
-                        className: "menuButton"
+
                     }}
                 >
                     {label}
@@ -139,9 +137,21 @@ export default function Header() {
         });
     };
 
+    // window.onscroll = function () {
+    //     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    //         document.getElementById("header").className = "scrolled";
+    //     } else {
+    //         document.getElementById("header").className = "MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4";
+    //     }
+    // }
+
     return (
         <header>
-            <AppBar className="header">
+            <AppBar
+                id="header"
+                // position="fixed"  
+                style={{ background: document.body.scrollTop == 0 ? 'transparent' : "black", boxShadow: 'none'}}
+            >
                 {mobileView ? displayMobile() : displayDesktop()}
             </AppBar>
         </header>
