@@ -1,7 +1,7 @@
 
 
 .scrolled {
-    background-color: black;
+    background-color: black !important;
     top: 0;
     left: auto;
     right: 0;

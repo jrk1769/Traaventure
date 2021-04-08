@@ -137,13 +137,13 @@ export default function Header() {
         });
     };
 
-    // window.onscroll = function () {
-    //     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    //         document.getElementById("header").className = "scrolled";
-    //     } else {
-    //         document.getElementById("header").className = "MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4";
-    //     }
-    // }
+    window.onscroll = function () {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            document.getElementById("header").className = "scrolled";
+        } else {
+            document.getElementById("header").className = "MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4";
+        }
+    }
 
     return (
         <header>
