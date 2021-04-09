@@ -1,0 +1,46 @@
+{
+    "trips": [
+        {
+            "title": "Shimal-leh-Shimla",
+            "date": "3rd May",
+            "duration": "3N | 2D",
+            "price": 8000,
+            "id": 1
+        },
+        {
+            "title": "Himachal",
+            "date": "12rd May",
+            "duration": "7N | 8D",
+            "price": 22000,
+            "id": 2
+        },
+        {
+            "title": "Coorg-Ooty",
+            "date": "27rd May",
+            "duration": "4N | 5D",
+            "price": 10000,
+            "id": 3
+        },
+        {
+            "title": "Shimal-leh-Shimla",
+            "date": "3rd May",
+            "duration": "3N | 2D",
+            "price": 8000,
+            "id": 1
+        },
+        {
+            "title": "Himachal",
+            "date": "12rd May",
+            "duration": "7N | 8D",
+            "price": 22000,
+            "id": 2
+        },
+        {
+            "title": "Coorg-Ooty",
+            "date": "27rd May",
+            "duration": "4N | 5D",
+            "price": 10000,
+            "id": 3
+        }
+    ]
+}

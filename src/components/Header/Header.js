@@ -9,7 +9,7 @@ import {
     MenuItem
 } from '@material-ui/core';
 import MenuIcon from "@material-ui/icons/Menu";
-import { Link, Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const headersData = [
@@ -22,15 +22,19 @@ const headersData = [
         href: "/about",
     },
     {
-        label: "Destinations",
-        href: "/destinations",
+        label: "Gallery",
+        href: "/gallery",
     },
     {
         label: "Upcoming Trips",
         href: "/trips",
     },
     {
-        label: "Free Membership",
+        label: "Blogs",
+        href: "/blogs",
+    },
+    {
+        label: "Join Us",
         href: "/register"
     }
 ];
@@ -60,7 +64,6 @@ export default function Header() {
                 {traaventureLogo}
                 <div className="toolbar">
                     {getMenuButtons()}
-                    {/* <input type="search" id="search" placeholder="search" className="search"></input> */}
                 </div>
             </Toolbar>
         );
@@ -98,7 +101,7 @@ export default function Header() {
 
     const traaventureLogo = (
         <Typography variant="h6" component="h1" className="logo">
-            Traaventure
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>Traaventure</Link>
         </Typography>
     );
 
@@ -107,7 +110,7 @@ export default function Header() {
             return (
                 <Link
                     {...{
-                        component: RouterLink,
+                        component: Link,
                         to: href,
                         color: "inherit",
                         style: { textDecoration: "none" },
@@ -127,7 +130,7 @@ export default function Header() {
                     {...{
                         key: label,
                         to: href,
-                        component: RouterLink,
+                        component: Link,
 
                     }}
                 >
@@ -138,7 +141,7 @@ export default function Header() {
     };
 
     window.onscroll = function () {
-        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("header").className = "scrolled";
         } else {
             document.getElementById("header").className = "MuiPaper-root MuiAppBar-root MuiAppBar-positionFixed MuiAppBar-colorPrimary mui-fixed MuiPaper-elevation4";
@@ -149,8 +152,7 @@ export default function Header() {
         <header>
             <AppBar
                 id="header"
-                // position="fixed"  
-                style={{ background: document.body.scrollTop == 0 ? 'transparent' : "black", boxShadow: 'none'}}
+                style={{ background: document.body.scrollTop === 0 ? 'transparent' : "black", boxShadow: 'none'}}
             >
                 {mobileView ? displayMobile() : displayDesktop()}
             </AppBar>

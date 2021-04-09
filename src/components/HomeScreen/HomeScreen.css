@@ -4,4 +4,98 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    color: rgb(212, 206, 206);
+    margin-bottom: 20px;
+}
+
+.search {
+    width: 50%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.search input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #00bcd452;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(212, 206, 206);
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(212, 206, 206);
+}
+
+::-moz-placeholder {
+    color: rgb(212, 206, 206);
+}
+
+::-ms-input-placeholder {
+    color: rgb(212, 206, 206);
+}
+
+.fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    color: rgb(212, 206, 206);
+    font-size: 25px;
+}
+
+.icons {
+    width: 100%;
+    top: 95%;
+    transform: translateY(-100%);
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-5x {
+    color: rgb(255,255,255,0.5);
+    align-items: center;
+    padding: auto;
+}
+
+.text {
+    color: rgb(255,255,255,0.5);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center; 
+}
+
+.trips {
+    padding: 0;
+}
+
+.tripsCarousel {
+    width: 95%;
+    margin: auto;
+    margin: 100px 50px;
+}
+
+
+@media screen and (max-width: 425px) {
+    .search {
+        width: 95%;
+        position: relative;
+    }
 }
