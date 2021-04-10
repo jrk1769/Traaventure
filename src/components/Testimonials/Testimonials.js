@@ -1,7 +1,8 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import { CustomButtonGroupAsArrows } from '../CarouselButtons/CarouselButtons';
+import Avatar from '@material-ui/core/Avatar';
+import './Testimonials.css';
 
 /**
 * @author
@@ -14,7 +15,7 @@ const Testimonials = ({ testimonials, title }) => {
     desktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 1024 },
-      items: 1
+      items: 2
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -42,13 +43,17 @@ const Testimonials = ({ testimonials, title }) => {
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         arrows={true}
-        // customButtonGroup={<CustomButtonGroupAsArrows/>} 
-        renderButtonGroupOutside={true} 
       >
         {testimonials.map((review) => (
           <div className="testimonialPreview" key={review.id}>
-            <h2>{review.title}</h2>
-            <p>{review.tripTo}</p>
+            <div className="testimonial-sub-container">
+              <Avatar className="review-avatar">{review.title.charAt(0)}</Avatar>
+              <div className="review-container">
+                <h2>{review.title}</h2>
+                <span className="trip-decor">{review.review}</span>
+                <p className="trip-decor">Trip to {review.tripTo}</p>
+              </div>
+            </div>
           </div>
         ))}
       </Carousel>
