@@ -90,11 +90,23 @@
 }
 
 .tripsCarousel {
-    width: 95%;
-    margin: auto;
-    margin: 100px 50px;
+    width: 100%;
 }
 
+.react-multiple-carousel__arrow--right {
+    right: 0px;
+    border-radius: 0 4px 4px 0;
+    height: 100%;
+    width: 20px;
+    min-width: auto;
+}
+.react-multiple-carousel__arrow--left {
+    left: 0px;
+    border-radius: 4px 0 0 4px;
+    height: 100%;
+    width: 20px;
+    min-width: auto;
+}
 
 @media screen and (max-width: 425px) {
     .search {

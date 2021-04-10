@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-// import { CustomButtonGroupAsArrows } from '../CarouselButtons/CarouselButtons';
+import "./Trips.css";
 
 /**
 * @author
@@ -37,19 +37,26 @@ const Trips = ({ trips, title }) => {
         ssr={true} // means to render carousel on server-side.
         infinite={false}
         keyBoardControl={true}
-        customTransition="all .5"
+        customTransition="transform 500ms ease-in-out"
         transitionDuration={500}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         arrows={true}
-        // customButtonGroup={<CustomButtonGroupAsArrows/>} 
-        renderButtonGroupOutside={true} 
+        renderButtonGroupOutside={true}
       >
         {trips.map((trip) => (
           <div className="tripPreview" key={trip.id}>
-            <h2>{trip.title}</h2>
-            <p>{trip.date}</p>
-            <p>{trip.price}</p>
+            <header className="trip-head-container">
+              <h2>{trip.title}</h2>
+            </header>
+            <section>
+              <img className="img-container" src={trip.imgSrc} />
+            </section>
+            <footer className="trip-card-footer">
+              <span>{trip.date}</span>
+              <span>{trip.duration}</span>
+              <span>{trip.price}</span>
+            </footer>
           </div>
         ))}
       </Carousel>

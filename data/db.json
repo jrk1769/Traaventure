@@ -2,45 +2,67 @@
     "trips": [
         {
             "title": "Shimal-leh-Shimla",
-            "date": "3rd May",
+            "date": "3rd May'21",
             "duration": "3N | 2D",
             "price": 8000,
-            "id": 1
+            "id": 1435,
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+        },
+        {
+            "title": "Mysore-Bangalore",
+            "date": "3rd May'21",
+            "duration": "3N | 2D",
+            "price": 8000,
+            "id": 17675,
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+        },
+        {
+            "title": "Daman & Diu",
+            "date": "3rd May'21",
+            "duration": "3N | 2D",
+            "price": 8000,
+            "id": 1365,
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
             "title": "Himachal",
-            "date": "12rd May",
+            "date": "12th May'21",
             "duration": "7N | 8D",
             "price": 22000,
-            "id": 2
+            "id": 2,
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
             "title": "Coorg-Ooty",
-            "date": "27rd May",
+            "date": "27th May'21",
             "duration": "4N | 5D",
             "price": 10000,
-            "id": 3
+            "id": 3,
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
             "title": "Shimal-leh-Shimla",
-            "date": "3rd May",
+            "date": "3rd May'21",
             "duration": "3N | 2D",
             "price": 8000,
-            "id": 1
+            "id": 1,
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
             "title": "Himachal",
-            "date": "12rd May",
+            "date": "12th May'21",
             "duration": "7N | 8D",
             "price": 22000,
-            "id": 2
+            "id": 286987,
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
             "title": "Coorg-Ooty",
-            "date": "27rd May",
+            "date": "27th May'21",
             "duration": "4N | 5D",
             "price": 10000,
-            "id": 3
+            "id": 35679,
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         }
     ],
     "testimonials": [
