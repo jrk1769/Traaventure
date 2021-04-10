@@ -69,11 +69,14 @@
     display: flex;
     justify-content: space-evenly;
 }
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .fa-5x {
     color: rgb(255,255,255,0.5);
-    align-items: center;
-    padding: auto;
 }
 
 .text {

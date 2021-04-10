@@ -16,15 +16,15 @@ const HomeScreen = () => {
           <i className="fas fa-search"></i>
         </div>
         <div className="icons">
-          <div>
+          <div className="icon-container">
             <i className="fas fa-route fa-5x"></i>
             <p className="text">100+<br />Trips</p>
           </div>
-          <div>
+          <div className="icon-container">
             <i className="far fa-smile-wink fa-5x"></i>
             <p className="text">1000+<br />Customers</p>
           </div>
-          <div>
+          <div className="icon-container">
             <i className="fas fa-map-marker-alt fa-5x"></i>
             <p className="text">100+<br />Places Covered</p>
           </div>
