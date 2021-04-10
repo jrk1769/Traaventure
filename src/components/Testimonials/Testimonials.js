@@ -5,10 +5,10 @@ import "react-multi-carousel/lib/styles.css";
 
 /**
 * @author
-* @function Trips
+* @function Testimonials
 **/
 
-const Trips = ({ trips, title }) => {
+const Testimonials = ({ testimonials, title }) => {
 
   const responsive = {
     desktop: {
@@ -27,7 +27,7 @@ const Trips = ({ trips, title }) => {
   };
 
   return (
-    <div className="trips">
+    <div className="testimonials">
       <h2>{title}</h2>
       <Carousel
         swipeable={true}
@@ -45,11 +45,10 @@ const Trips = ({ trips, title }) => {
         // customButtonGroup={<CustomButtonGroupAsArrows/>} 
         renderButtonGroupOutside={true} 
       >
-        {trips.map((trip) => (
-          <div className="tripPreview" key={trip.id}>
-            <h2>{trip.title}</h2>
-            <p>{trip.date}</p>
-            <p>{trip.price}</p>
+        {testimonials.map((review) => (
+          <div className="testimonialPreview" key={review.id}>
+            <h2>{review.title}</h2>
+            <p>{review.tripTo}</p>
           </div>
         ))}
       </Carousel>
@@ -57,4 +56,4 @@ const Trips = ({ trips, title }) => {
   )
 }
 
-export default Trips
+export default Testimonials
