@@ -10,7 +10,7 @@ const Images = ({images}) => {
     <div className="Images">
       {
         images.map((image) => (
-          <div key={image.id} className={image.class + " itemBox"}>
+          <div key={image.id} className={image.category + " itemBox"}>
             <img src={image.imgSrc} alt={image.class} />
           </div>
         ))

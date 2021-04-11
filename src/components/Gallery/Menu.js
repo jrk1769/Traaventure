@@ -1,21 +1,23 @@
-import React from 'react'
+import React from "react";
 
 /**
-* @author
-* @function Menu
-**/
+ * @author
+ * @function Menu
+ **/
 
-const Menu = ({ places }) => {
-    return (
-        <ul>
-            {
-                places.map((place) => (
-                    <li className={place.name === "All" ? "list active" : "list"} key={place.id} data-filter={place.name}>{place.name}</li>
-                ))
-            }
-        </ul>
-    )
+const Menu = ({ places, handleGalleryFilter }) => {
+  return (
+    <ul>
+      {places.map((place) => (
+        <li onClick={() => handleGalleryFilter(place.category)}
+          className={place.category === "All" ? "list active" : "list"}
+          key={place.id}
+        >
+          {place.category}
+        </li>
+      ))}
+    </ul>
+  );
+};
 
-}
-
-export default Menu
+export default Menu;

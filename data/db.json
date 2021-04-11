@@ -119,125 +119,125 @@
     ],
     "images": [
         {
-            "class": "Mobile",
+            "category": "Mobile",
             "imgSrc": "images/mobile1.jpg",
             "id": 1
         },
         {
-            "class": "Mobile",
+            "category": "Mobile",
             "imgSrc": "images/mobile2.jpg",
             "id": 2
         },
         {
-            "class": "Mobile",
+            "category": "Mobile",
             "imgSrc": "images/mobile3.jpg",
             "id": 3
         },
         {
-            "class": "Mobile",
+            "category": "Mobile",
             "imgSrc": "images/mobile4.jpg",
             "id": 4
         },
         {
-            "class": "Mobile",
+            "category": "Mobile",
             "imgSrc": "images/mobile5.jpg",
             "id": 5
         },
         {
-            "class": "Camera",
+            "category": "Camera",
             "imgSrc": "images/camera1.jpg",
             "id": 6
         },
         {
-            "class": "Camera",
+            "category": "Camera",
             "imgSrc": "images/camera2.jpg",
             "id": 7
         },
         {
-            "class": "Camera",
+            "category": "Camera",
             "imgSrc": "images/camera3.jpg",
             "id": 8
         },
         {
-            "class": "Headphone",
+            "category": "Headphone",
             "imgSrc": "images/headphone1.jpg",
             "id": 9
         },
         {
-            "class": "Headphone",
+            "category": "Headphone",
             "imgSrc": "images/headphone2.jpg",
             "id": 10
         },
         {
-            "class": "Headphone",
+            "category": "Headphone",
             "imgSrc": "images/headphone3.jpg",
             "id": 11
         },
         {
-            "class": "Headphone",
+            "category": "Headphone",
             "imgSrc": "images/headphone4.jpg",
             "id": 12
         },
         {
-            "class": "Shoe",
+            "category": "Shoe",
             "imgSrc": "images/shoe1.jpg",
             "id": 13
         },
         {
-            "class": "Shoe",
+            "category": "Shoe",
             "imgSrc": "images/shoe2.jpg",
             "id": 14
         },
         {
-            "class": "Shoe",
+            "category": "Shoe",
             "imgSrc": "images/shoe3.jpg",
             "id": 15
         },
         {
-            "class": "Shoe",
+            "category": "Shoe",
             "imgSrc": "images/shoe4.jpg",
             "id": 16
         },
         {
-            "class": "Watch",
+            "category": "Watch",
             "imgSrc": "images/watch1.jpg",
             "id": 17
         },
         {
-            "class": "Watch",
+            "category": "Watch",
             "imgSrc": "images/watch2.jpg",
             "id": 18
         },
         {
-            "class": "Watch",
+            "category": "Watch",
             "imgSrc": "images/watch3.jpg",
             "id": 19
         },
         {
-            "class": "Watch",
+            "category": "Watch",
             "imgSrc": "images/watch4.jpg",
             "id": 20
         }
     ],
     "places": [
         {
-            "name": "All",
+            "category": "All",
             "id": 1
         },
         {
-            "name": "Watch",
+            "category": "Watch",
             "id": 2
         },
         {
-            "name": "Mobile",
+            "category": "Mobile",
             "id": 3
         },
         {
-            "name": "Shoe",
+            "category": "Shoe",
             "id": 4
         },
         {
-            "name": "Camera",
+            "category": "Camera",
             "id": 5
         }        
     ]
