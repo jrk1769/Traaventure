@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import useFetch from "../useFetch/useFetch";
-import Images from "./Images";
-import Menu from "./Menu";
 import "./Gallery.css";
 
 /**
@@ -9,7 +7,7 @@ import "./Gallery.css";
  * @function Gallery
  **/
 
-const Gallery = (props) => {
+const Gallery = () => {
   const { data: images, error: imagesErr, isLoading: imagesLoad } = useFetch(
     "http://localhost:8000/images"
   );
@@ -17,12 +15,24 @@ const Gallery = (props) => {
     "http://localhost:8000/places"
   );
 
-  const handleGalleryFilter = (categoryName) => {
-    console.log(categoryName);
-    images = images.filter((image) => {
-      return image.categoryName === categoryName;
-    });
-  };
+
+  const [filter, setFilter] = useState("All");
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    if (!imagesLoad && !imagesErr && images) {
+      setItems(images);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!imagesLoad && !imagesErr && images) {
+      setItems([]);
+      const filtered = images.map(img => ({ ...img, filtered: img.category.includes(filter) }));
+      setItems(filtered);
+    }
+
+  }, [filter, imagesLoad]);
 
   return (
     <>
@@ -31,12 +41,31 @@ const Gallery = (props) => {
         {placesErr && <div>{placesErr}</div>}
         {placesLoad && <div>Loading...</div>}
         {places && (
-          <Menu handleGalleryFilter={handleGalleryFilter} places={places} />
+          <ul>
+            {
+              places.map((place) => (
+                <li
+                  key={place.id}
+                  onClick={() => {
+                    setFilter(place.category)
+                  }}
+                >{place.category}</li>
+              ))
+            }
+          </ul>
         )}
         <div className="gallery">
           {imagesErr && <div>{imagesErr}</div>}
           {imagesLoad && <div>Loading...</div>}
-          {images && <Images images={images} />}
+          <div className="Images" >
+            {
+              items.map((image => image.filtered === true ? (
+                <div key={image.id} className={image.category + " itemBox"}>
+                  <img src={image.imgSrc} alt={image.category} />
+                </div>
+              ) : ''))
+            }
+          </div>
         </div>
       </section>
     </>

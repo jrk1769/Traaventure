@@ -1,19 +1,11 @@
 import React from "react";
-// import {
-// Box,
-//,
-// Row,
-// Column,
-// FooterLink,
-// Heading,
-// } from "./FooterStyles";
 import Grid from "@material-ui/core/Grid";
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="box">
-      <Grid spacing={3}>
+    <div className="box" spacing={3}>
+      <Grid>
         <Grid item xs={6} sm={3}>
           Terms &amp; Conditions
         </Grid>
