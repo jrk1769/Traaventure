@@ -6,6 +6,7 @@
             "duration": "3N | 2D",
             "price": 8000,
             "id": 1435,
+            "alt": "Place Name",
             "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
@@ -13,7 +14,8 @@
             "date": "3rd May'21",
             "duration": "3N | 2D",
             "price": 8000,
-            "id": 17675,
+            "id": 17675,    
+            "alt": "Place Name",
             "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
@@ -22,6 +24,7 @@
             "duration": "3N | 2D",
             "price": 8000,
             "id": 1365,
+            "alt": "Place Name",
             "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
@@ -30,6 +33,7 @@
             "duration": "7N | 8D",
             "price": 22000,
             "id": 2,
+            "alt": "Place Name",
             "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
@@ -38,6 +42,7 @@
             "duration": "4N | 5D",
             "price": 10000,
             "id": 3,
+            "alt": "Place Name",
             "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
@@ -46,6 +51,7 @@
             "duration": "3N | 2D",
             "price": 8000,
             "id": 1,
+            "alt": "Place Name",
             "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
@@ -54,6 +60,7 @@
             "duration": "7N | 8D",
             "price": 22000,
             "id": 286987,
+            "alt": "Place Name",
             "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         },
         {
@@ -62,6 +69,7 @@
             "duration": "4N | 5D",
             "price": 10000,
             "id": 35679,
+            "alt": "Place Name",
             "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
         }
     ],
@@ -69,44 +77,168 @@
         {
             "title": "Nisha's Review",
             "tripTo": "Manali",
-            "review":"Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+            "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
             "id": 1
         },
         {
             "title": "Manish's Review",
             "tripTo": "Manali",
-            "review":"Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+            "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
             "id": 2
         },
         {
             "title": "Sirisha's Review",
             "tripTo": "Leh Ladakh",
-            "review":"Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+            "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
             "id": 3
         },
         {
             "title": "Nimisha's Review",
             "tripTo": "Himachal",
-            "review":"Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+            "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
             "id": 4
         },
         {
             "title": "Prisha's Review",
             "tripTo": "Kulu",
-            "review":"Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+            "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
             "id": 5
         },
         {
             "title": "Jigisha's Review",
             "tripTo": "Kashmir",
-            "review":"Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+            "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
             "id": 6
         },
         {
             "title": "Disha's Review",
             "tripTo": "Ooty",
-            "review":"Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+            "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
             "id": 7
         }
+    ],
+    "images": [
+        {
+            "class": "Mobile",
+            "imgSrc": "images/mobile1.jpg",
+            "id": 1
+        },
+        {
+            "class": "Mobile",
+            "imgSrc": "images/mobile2.jpg",
+            "id": 2
+        },
+        {
+            "class": "Mobile",
+            "imgSrc": "images/mobile3.jpg",
+            "id": 3
+        },
+        {
+            "class": "Mobile",
+            "imgSrc": "images/mobile4.jpg",
+            "id": 4
+        },
+        {
+            "class": "Mobile",
+            "imgSrc": "images/mobile5.jpg",
+            "id": 5
+        },
+        {
+            "class": "Camera",
+            "imgSrc": "images/camera1.jpg",
+            "id": 6
+        },
+        {
+            "class": "Camera",
+            "imgSrc": "images/camera2.jpg",
+            "id": 7
+        },
+        {
+            "class": "Camera",
+            "imgSrc": "images/camera3.jpg",
+            "id": 8
+        },
+        {
+            "class": "Headphone",
+            "imgSrc": "images/headphone1.jpg",
+            "id": 9
+        },
+        {
+            "class": "Headphone",
+            "imgSrc": "images/headphone2.jpg",
+            "id": 10
+        },
+        {
+            "class": "Headphone",
+            "imgSrc": "images/headphone3.jpg",
+            "id": 11
+        },
+        {
+            "class": "Headphone",
+            "imgSrc": "images/headphone4.jpg",
+            "id": 12
+        },
+        {
+            "class": "Shoe",
+            "imgSrc": "images/shoe1.jpg",
+            "id": 13
+        },
+        {
+            "class": "Shoe",
+            "imgSrc": "images/shoe2.jpg",
+            "id": 14
+        },
+        {
+            "class": "Shoe",
+            "imgSrc": "images/shoe3.jpg",
+            "id": 15
+        },
+        {
+            "class": "Shoe",
+            "imgSrc": "images/shoe4.jpg",
+            "id": 16
+        },
+        {
+            "class": "Watch",
+            "imgSrc": "images/watch1.jpg",
+            "id": 17
+        },
+        {
+            "class": "Watch",
+            "imgSrc": "images/watch2.jpg",
+            "id": 18
+        },
+        {
+            "class": "Watch",
+            "imgSrc": "images/watch3.jpg",
+            "id": 19
+        },
+        {
+            "class": "Watch",
+            "imgSrc": "images/watch4.jpg",
+            "id": 20
+        }
+    ],
+    "places": [
+        {
+            "name": "All",
+            "id": 1
+        },
+        {
+            "name": "Watch",
+            "id": 2
+        },
+        {
+            "name": "Mobile",
+            "id": 3
+        },
+        {
+            "name": "Shoe",
+            "id": 4
+        },
+        {
+            "name": "Camera",
+            "id": 5
+        }        
     ]
 }

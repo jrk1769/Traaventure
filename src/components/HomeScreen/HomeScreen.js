@@ -5,8 +5,8 @@ import "./HomeScreen.css";
 
 
 const HomeScreen = () => {
-  const { data: trips, error: err1, isLoading: load1} = useFetch('http://localhost:8000/trips');
-  const { data: testimonials, error: err2, isLoading: load2 } = useFetch('http://localhost:8000/testimonials');
+  const { data: trips, error: tripErr, isLoading: tripLoad} = useFetch('http://localhost:8000/trips');
+  const { data: testimonials, error: testimonialsErr, isLoading: testimonialsLoad } = useFetch('http://localhost:8000/testimonials');
   return (
     <>
       <div className="homePageImg">
@@ -31,13 +31,13 @@ const HomeScreen = () => {
         </div>
       </div>
       <div className="tripsCarousel">
-        {err1 && <div>{err1}</div>}
-        {load1 && <div>Loading...</div>}
+        {tripErr && <div>{tripErr}</div>}
+        {tripLoad && <div>Loading...</div>}
         {trips && <Trips trips={trips} title="All Upcoming Trips" />}
       </div>
       <div className="testimonails">
-        {err2 && <div>{err2}</div>}
-        {load2 && <div>Loading...</div>}
+        {testimonialsErr && <div>{testimonialsErr}</div>}
+        {testimonialsLoad && <div>Loading...</div>}
         {testimonials && <Testimonials testimonials={testimonials} title="What People say" />}
       </div>
     </>
