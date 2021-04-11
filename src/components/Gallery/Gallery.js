@@ -18,7 +18,7 @@ const Gallery = (props) => {
       <div className="backgrnd">
 
       </div>
-      <section>
+      <section className="gallery-container">
         {placesErr && <div>{placesErr}</div>}
         {placesLoad && <div>Loading...</div>}
         {places && <Menu places={places} />}

@@ -1,80 +1,52 @@
 import React from "react";
 // import {
 // Box,
-// Container,
+//,
 // Row,
 // Column,
 // FooterLink,
 // Heading,
 // } from "./FooterStyles";
+import Grid from "@material-ui/core/Grid";
 import "./Footer.css";
 
 const Footer = () => {
-    return (
-        <div className="box">
-            <h1 style={{
-                color: "#FEFEFE",
-                textAlign: "center",
-                marginTop: "-50px"
-            }}>
-                Traaventure
-	        </h1>
-            <div className="container">
-                <div className="row">
-                    <div className="column">
-                        <div className="heading">About Us</div>
-                        <div className="footerLink" href="#">Aim</div>
-                        <div className="footerLink" href="#">Vision</div>
-                        <div className="footerLink" href="#">Testimonials</div>
-                    </div>
-                    <div className="column">
-                        <div className="heading">Services</div>
-                        <div className="footerLink" href="#">Writing</div>
-                        <div className="footerLink" href="#">Internships</div>
-                        <div className="footerLink" href="#">Coding</div>
-                        <div className="footerLink" href="#">Teaching</div>
-                    </div>
-                    <div className="column">
-                        <div className="heading">Contact Us</div>
-                        <div className="footerLink" href="#">Uttar Pradesh</div>
-                        <div className="footerLink" href="#">Ahemdabad</div>
-                        <div className="footerLink" href="#">Indore</div>
-                        <div className="footerLink" href="#">Mumbai</div>
-                    </div>
-                    <div className="column">
-                        <div className="heading">Social Media</div>
-                        <div className="footerLink" href="#">
-                            <i className="fab fa-facebook-f">
-                                <span style={{ marginLeft: "10px" }}>
-                                    Facebook
-				</span>
-                            </i>
-                        </div>
-                        <div className="footerLink" href="#">
-                            <i className="fab fa-instagram">
-                                <span style={{ marginLeft: "10px" }}>
-                                    Instagram
-				</span>
-                            </i>
-                        </div>
-                        <div className="footerLink" href="#">
-                            <i className="fab fa-twitter">
-                                <span style={{ marginLeft: "10px" }}>
-                                    Twitter
-				</span>
-                            </i>
-                        </div>
-                        <div className="footerLink" href="#">
-                            <i className="fab fa-youtube">
-                                <span style={{ marginLeft: "10px" }}>
-                                    Youtube
-				</span>
-                            </i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+  return (
+    <div className="box">
+      <Grid spacing={3}>
+        <Grid item xs={6} sm={3}>
+          Terms &amp; Conditions
+        </Grid>
+        <Grid item xs={6} sm={2}>
+          Disclaimer
+        </Grid>
+        <Grid item xs={6} sm={2}>
+          Privacy Policy
+        </Grid>
+        <Grid item xs={6} sm={2}>
+          Contact Us
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <Grid item xs={6} sm={6}>
+            Why Us?
+          </Grid>
+          <Grid item xs={6} sm={6}>
+            <Grid item xs={4} sm={4} href="#">
+              <i className="fab fa-facebook-f"></i>
+            </Grid>
+            <Grid item xs={4} sm={4} href="#">
+              <i className="fab fa-instagram"></i>
+            </Grid>
+            <Grid item xs={4} sm={4} href="#">
+              <i className="fab fa-youtube"></i>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid className="copyrights-text" sm={12} spacing={3}>
+        &copy; 2021 Traaventure
+      </Grid>
+    </div>
+  );
 };
 export default Footer;
