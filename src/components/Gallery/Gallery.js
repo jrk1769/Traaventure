@@ -46,6 +46,7 @@ const Gallery = () => {
               places.map((place) => (
                 <li
                   key={place.id}
+                  /*active={filter===place.category}*/
                   onClick={() => {
                     setFilter(place.category)
                   }}
