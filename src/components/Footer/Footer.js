@@ -4,7 +4,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="box" spacing={3}>
+    <div className="box">
       <Grid>
         <Grid item xs={6} sm={3}>
           Terms &amp; Conditions
@@ -35,7 +35,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid className="copyrights-text" sm={12} spacing={3}>
+      <Grid className="copyrights-text">
         &copy; 2021 Traaventure
       </Grid>
     </div>

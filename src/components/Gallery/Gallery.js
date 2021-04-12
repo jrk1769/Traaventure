@@ -15,7 +15,6 @@ const Gallery = () => {
     "http://localhost:8000/places"
   );
 
-
   const [filter, setFilter] = useState("All");
   const [items, setItems] = useState([]);
 
@@ -28,10 +27,12 @@ const Gallery = () => {
   useEffect(() => {
     if (!imagesLoad && !imagesErr && images) {
       setItems([]);
-      const filtered = images.map(img => ({ ...img, filtered: img.category.includes(filter) }));
+      const filtered = images.map((img) => ({
+        ...img,
+        filtered: img.category.includes(filter),
+      }));
       setItems(filtered);
     }
-
   }, [filter, imagesLoad]);
 
   return (
@@ -42,30 +43,32 @@ const Gallery = () => {
         {placesLoad && <div>Loading...</div>}
         {places && (
           <ul>
-            {
-              places.map((place) => (
-                <li
-                  key={place.id}
-                  /*active={filter===place.category}*/
-                  onClick={() => {
-                    setFilter(place.category)
-                  }}
-                >{place.category}</li>
-              ))
-            }
+            {places.map((place) => (
+              <li
+                key={place.id}
+                className={filter === place.category ? 'active' : ''}
+                onClick={() => {
+                  setFilter(place.category);
+                }}
+              >
+                {place.category}
+              </li>
+            ))}
           </ul>
         )}
         <div className="gallery">
           {imagesErr && <div>{imagesErr}</div>}
           {imagesLoad && <div>Loading...</div>}
-          <div className="Images" >
-            {
-              items.map((image => image.filtered === true ? (
+          <div className="Images">
+            {items.map((image) =>
+              image.filtered === true ? (
                 <div key={image.id} className={image.category + " itemBox"}>
                   <img src={image.imgSrc} alt={image.category} />
                 </div>
-              ) : ''))
-            }
+              ) : (
+                ""
+              )
+            )}
           </div>
         </div>
       </section>
