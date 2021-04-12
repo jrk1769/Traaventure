@@ -8,7 +8,7 @@ import "./PopUp.css"
 
 const PopUp = () => {
   return(
-    <div className="btn"><i className="fas fa-phone-alt"></i></div>
+    <div className="btn"><i className="fas fa-phone-alt align-icon"></i></div>
    )
 
  }
