@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import AnimatedModal from "../Modal/Modal";
 import useFetch from "../useFetch/useFetch";
 import "./Gallery.css";
 
@@ -17,12 +18,15 @@ const Gallery = () => {
 
   const [filter, setFilter] = useState("All");
   const [items, setItems] = useState([]);
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState({ "-1": false });
 
-  const handleShowDialog = () => {
-    setOpen(!open);
+  const handleShowDialog = (imageId) => {
+    const isOpen = {
+      [imageId]: !open[imageId],
+    };
+    setOpen(isOpen);
     console.log("clicked");
-  }
+  };
 
   useEffect(() => {
     if (!imagesLoad && !imagesErr && images) {
@@ -52,7 +56,7 @@ const Gallery = () => {
             {places.map((place) => (
               <li
                 key={place.id}
-                className={filter === place.category ? 'active' : ''}
+                className={filter === place.category ? "active" : ""}
                 onClick={() => {
                   setFilter(place.category);
                 }}
@@ -69,18 +73,19 @@ const Gallery = () => {
             {items.map((image) =>
               image.filtered === true ? (
                 <div key={image.id} className={image.category + " itemBox"}>
-                  <img src={image.imgSrc} alt={image.category} onClick={handleShowDialog} />
-                  {
-                    open && (
-                    <dialog
-                      className="dialog"
-                      style={{ position: "absolute" }}
-                      open
-                      onClick={handleShowDialog}
-                    >
-                      <img src={image.imgSrc} alt={image.category} onClick={handleShowDialog} />
-                    </dialog>)
-                  }
+                  <img
+                    src={image.imgSrc}
+                    alt={image.category}
+                    onClick={() => handleShowDialog(image.id)}
+                  />
+                  {open[image.id] && (
+                    <AnimatedModal
+                      imageId={image.id}
+                      open={open}
+                      imgSrc={image.imgSrc}
+                      handleClose={() => handleShowDialog(image.id)}
+                    ></AnimatedModal>
+                  )}
                 </div>
               ) : (
                 ""
