@@ -17,12 +17,18 @@ const Gallery = () => {
 
   const [filter, setFilter] = useState("All");
   const [items, setItems] = useState([]);
+  const [open, setOpen] = useState(false);
+
+  const handleShowDialog = () => {
+    setOpen(!open);
+    console.log("clicked");
+  }
 
   useEffect(() => {
     if (!imagesLoad && !imagesErr && images) {
       setItems(images);
     }
-  }, []);
+  }, [images, imagesErr, imagesLoad]);
 
   useEffect(() => {
     if (!imagesLoad && !imagesErr && images) {
@@ -33,7 +39,7 @@ const Gallery = () => {
       }));
       setItems(filtered);
     }
-  }, [filter, imagesLoad]);
+  }, [filter, images, imagesErr, imagesLoad]);
 
   return (
     <>
@@ -63,7 +69,18 @@ const Gallery = () => {
             {items.map((image) =>
               image.filtered === true ? (
                 <div key={image.id} className={image.category + " itemBox"}>
-                  <img src={image.imgSrc} alt={image.category} />
+                  <img src={image.imgSrc} alt={image.category} onClick={handleShowDialog} />
+                  {
+                    open && (
+                    <dialog
+                      className="dialog"
+                      style={{ position: "absolute" }}
+                      open
+                      onClick={handleShowDialog}
+                    >
+                      <img src={image.imgSrc} alt={image.category} onClick={handleShowDialog} />
+                    </dialog>)
+                  }
                 </div>
               ) : (
                 ""
