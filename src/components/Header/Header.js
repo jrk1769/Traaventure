@@ -30,8 +30,8 @@ const headersData = [
         href: "/trips",
     },
     {
-        label: "Blogs",
-        href: "/blogs",
+        label: "Contact Us",
+        href: "/contactUs",
     },
     {
         label: "Join Us",

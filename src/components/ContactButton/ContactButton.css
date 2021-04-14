@@ -1,0 +1,35 @@
+.btn {
+  border-radius: 34px 8px 34px 34px;
+  border: none;
+  bottom: 20px;
+  color: #fff;
+  cursor: pointer;
+  display: table;
+  position: fixed;
+  right: 25px;
+  height: 60px;
+  width: 60px;
+  background-color: #126e82;
+  outline: none;
+  z-index: 80;
+}
+
+.align-icon {
+  position: relative;
+  font-size: 24px;
+  color: #d8e3e7;
+}
+
+.fa-whatsapp {
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+}
+
+.fa-user-alt {
+  color: black;
+}
+
+.whatsapp, .contact {
+  padding: 5px;
+}

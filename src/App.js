@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import HomeScreen from "./components/HomeScreen/HomeScreen";
 import Gallery from "./components/Gallery/Gallery";
-import PopUp from "./components/PopUp/PopUp";
+import ContactButton from "./components/ContactButton/ContactButton";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -14,11 +15,14 @@ function App() {
           <Route exact path="/">
             <HomeScreen />
           </Route>
-          <Route exact path="/gallery">
+          <Route path="/gallery">
             <Gallery />
           </Route>
+          <Route path="/contactUs">
+            <ContactUs />
+          </Route>
         </Switch>
-        <PopUp />
+        <ContactButton />
         <Footer />
       </Router>
     </>
