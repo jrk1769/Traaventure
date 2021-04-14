@@ -1,17 +1,42 @@
-.btn {
+.contact-btn {
   border-radius: 34px 8px 34px 34px;
   border: none;
-  bottom: 20px;
   color: #fff;
   cursor: pointer;
-  display: table;
-  position: fixed;
-  right: 25px;
   height: 60px;
   width: 60px;
   background-color: #126e82;
   outline: none;
-  z-index: 80;
+}
+
+.contact-icons-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.contact-options-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30px;
+  width: 0px;
+  z-index: -1;
+  position: relative;
+  right: 15px;
+  opacity: 0;
+  transition: linear all 1s;
+  border-radius: 4px;
+}
+
+.contact-options-container.opt-updated {
+  width: 100px;
+  transition: linear all 1s;
+  background: linear-gradient(to bottom right, #fff, #126e82);
+  padding: 10px;
+  opacity: 1;
 }
 
 .align-icon {
@@ -27,7 +52,7 @@
 }
 
 .fa-user-alt {
-  color: black;
+  color: firebrick;
 }
 
 .whatsapp, .contact {
