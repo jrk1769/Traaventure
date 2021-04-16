@@ -11,7 +11,7 @@ const ContactUs = (props) => {
     return (
         <>
             <div className="contactUsImg">
-                <h1 className="tag">Have a place of your own in mind?</h1>
+                <h1 className="contactTag">Have a place of your own in mind?</h1>
             </div>
             <div className="row">
                 <div className="column"><img src="images/contact1.jpg" alt="Telephone" style={{width: "100%"}} /></div>

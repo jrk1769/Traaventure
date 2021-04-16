@@ -5,72 +5,80 @@
             "date": "3rd May'21",
             "duration": "3N | 2D",
             "price": 8000,
-            "id": 1435,
+            "id": 1,
             "alt": "Place Name",
-            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg",
+            "category": "Nort-India"
         },
         {
             "title": "Mysore-Bangalore",
             "date": "3rd May'21",
             "duration": "3N | 2D",
             "price": 8000,
-            "id": 17675,    
+            "id": 2,    
             "alt": "Place Name",
-            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg",
+            "category": "South-India"
         },
         {
             "title": "Daman & Diu",
             "date": "3rd May'21",
             "duration": "3N | 2D",
             "price": 8000,
-            "id": 1365,
+            "id": 3,
             "alt": "Place Name",
-            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg",
+            "category": "West-India"
         },
         {
             "title": "Himachal",
             "date": "12th May'21",
             "duration": "7N | 8D",
             "price": 22000,
-            "id": 2,
+            "id": 4,
             "alt": "Place Name",
-            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg",
+            "category": "North-India"
         },
         {
             "title": "Coorg-Ooty",
             "date": "27th May'21",
             "duration": "4N | 5D",
             "price": 10000,
-            "id": 3,
+            "id": 5,
             "alt": "Place Name",
-            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg",
+            "category": "South-India"
         },
         {
             "title": "Shimal-leh-Shimla",
             "date": "3rd May'21",
             "duration": "3N | 2D",
             "price": 8000,
-            "id": 1,
+            "id": 6,
             "alt": "Place Name",
-            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg",
+            "category": "North-India"
         },
         {
             "title": "Himachal",
             "date": "12th May'21",
             "duration": "7N | 8D",
             "price": 22000,
-            "id": 286987,
+            "id": 7,
             "alt": "Place Name",
-            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg",
+            "category": "North-India"
         },
         {
             "title": "Coorg-Ooty",
             "date": "27th May'21",
             "duration": "4N | 5D",
             "price": 10000,
-            "id": 35679,
+            "id": 8,
             "alt": "Place Name",
-            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg"
+            "imgSrc": "https://www.tourmyindia.com/images/bestt-of-rajasthan.jpg",
+            "category": "South-India"
         }
     ],
     "testimonials": [

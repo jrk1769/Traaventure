@@ -27,15 +27,11 @@ const headersData = [
     },
     {
         label: "Upcoming Trips",
-        href: "/trips",
+        href: "/allTrips",
     },
     {
         label: "Contact Us",
         href: "/contactUs",
-    },
-    {
-        label: "Join Us",
-        href: "/register"
     }
 ];
 
@@ -110,10 +106,9 @@ export default function Header() {
             return (
                 <Link
                     {...{
-                        component: Link,
                         to: href,
                         color: "inherit",
-                        style: { textDecoration: "none" },
+                        style: { textDecoration: "none", color: "black" },
                         key: label,
                     }}
                 >

@@ -10,7 +10,7 @@ const HomeScreen = () => {
   return (
     <>
       <div className="homePageImg">
-        <h1 className="tag">A More Rewarding Way To Travel</h1>
+        <h1 className="homeTag">A More Rewarding Way To Travel</h1>
         <div className="search">
           <input type="text" placeholder="Enter your destination" />
           <i className="fas fa-search"></i>

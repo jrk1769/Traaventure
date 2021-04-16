@@ -8,28 +8,3 @@
     border-radius: 4px;
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.7);
 }
-.tripPreview {
-    width: 95%;
-    margin: auto;
-}
-
-.trip-head-container {
-    position: absolute;
-    display: block;
-    width: inherit;
-    text-align: center;
-    color: darkslategray;
-    text-shadow: 0px 1px 1px rgb(0 0 0);
-}
-
-.trip-card-footer {
-    position: absolute;
-    bottom: 0;
-    width: inherit;
-    bottom: 30px;
-    display: flex;
-    font-weight: bold;
-    color: darkslategray;
-    text-shadow: 0px 1px 1px rgb(0 0 0);
-    justify-content: space-evenly;
-}
