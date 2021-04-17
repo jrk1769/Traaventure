@@ -1,0 +1,30 @@
+.notFoundImg {
+    height: 90vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/trekking.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFoundContent {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.notFound1 {
+    font-size: 120px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    color: white;
+    font-family: "Montserrat", "sans-serif";
+}
+
+.notFound2 {
+    color: white;
+    font-family: "Montserrat", "sans-serif";
+    margin-top: 5px;
+}

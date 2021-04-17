@@ -19,7 +19,7 @@ const headersData = [
     },
     {
         label: "About Us",
-        href: "/about",
+        href: "/aboutUs",
     },
     {
         label: "Gallery",

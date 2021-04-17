@@ -6,6 +6,8 @@ import Gallery from "./components/Gallery/Gallery";
 import ContactButton from "./components/ContactButton/ContactButton";
 import ContactUs from "./components/ContactUs/ContactUs";
 import AllTrips from "./components/AllTrips/AllTrips";
+import NotFound from "./components/404/404";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 function App() {
   return (
@@ -22,8 +24,14 @@ function App() {
           <Route path="/contactUs">
             <ContactUs />
           </Route>
+          <Route path="/aboutUs">
+            <AboutUs />
+          </Route>
           <Route path="/allTrips">
             <AllTrips />
+          </Route>
+          <Route path="*">
+            <NotFound />
           </Route>
         </Switch>
         <ContactButton />
