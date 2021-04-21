@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from 'react-router-dom';
 import "./Trips.css";
 
 /**
@@ -46,17 +47,19 @@ const Trips = ({ trips, title }) => {
       >
         {trips.map((trip) => (
           <div className="tripPreview" key={trip.id}>
-            <header className="trip-head-container">
-              <h2>{trip.title}</h2>
-            </header>
-            <section>
-              <img className="img-container" src={trip.imgSrc} alt={trip.alt} />
-            </section>
-            <footer className="trip-card-footer">
-              <span>{trip.date}</span>
-              <span>{trip.duration}</span>
-              <span>{trip.price}</span>
-            </footer>
+            <Link to={`/trips/${trip.id}`}>
+              <header className="trip-head-container">
+                <h2>{trip.title}</h2>
+              </header>
+              <section>
+                <img className="img-container" src={trip.imgSrc} alt={trip.alt} />
+              </section>
+              <footer className="trip-card-footer">
+                <span>{trip.date}</span>
+                <span>{trip.duration}</span>
+                <span>{trip.price}</span>
+              </footer>
+            </Link>
           </div>
         ))}
       </Carousel>

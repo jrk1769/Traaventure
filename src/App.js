@@ -8,6 +8,7 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import AllTrips from "./components/AllTrips/AllTrips";
 import NotFound from "./components/404/404";
 import AboutUs from "./components/AboutUs/AboutUs";
+import TripDetails from "./components/TripDetails/TripDetails";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/allTrips">
             <AllTrips />
+          </Route>
+          <Route path="/trips/:id">
+            <TripDetails />
           </Route>
           <Route path="*">
             <NotFound />

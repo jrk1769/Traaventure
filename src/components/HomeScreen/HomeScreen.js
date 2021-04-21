@@ -1,4 +1,4 @@
-import Trips from "../Trips/Trips";
+import Trips from "../TripsCarousel/Trips";
 import Testimonials from "../Testimonials/Testimonials"
 import useFetch from "../useFetch/useFetch";
 import "./HomeScreen.css";

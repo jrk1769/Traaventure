@@ -2,6 +2,7 @@ import React from 'react'
 import useFetch from '../useFetch/useFetch'
 import "./AllTrips.css"
 import { Card, CardContent, CardHeader, CardMedia, makeStyles, Typography } from '@material-ui/core'
+import { Link } from 'react-router-dom'
 
 /**
 * @author
@@ -38,33 +39,35 @@ const AllTrips = () => {
   return (
     <>
       <div className="allTripsImg"></div>
-      <div>
+      <div className="tripContainer">
         {tripsErr && <div>{tripsErr}</div>}
         {tripsLoad && <div>Loading...</div>}
         {trips &&
           trips.map((trip) => (
-            <Card className={classes.root} key={trip.id} style={{ cursor:"pointer" }}>
-              <CardHeader
-                title={trip.title}
-                subheader={trip.date}
-              />
-              <CardMedia
-                className={classes.media}
-                image={trip.imgSrc}
-              />
-              <CardContent>
-                <Typography variant="body2" color="textSecondary" component="span">
-                  This impressive paella is a perfect party dish and a fun meal to cook together with your
-                  guests. Add 1 cup of frozen peas along with the mussels, if you like.
+            <Link to={`/trips/${trip.id}`}>
+              <Card className={classes.root} key={trip.id} style={{ cursor: "pointer" }}>
+                <CardHeader
+                  title={trip.title}
+                  subheader={trip.date}
+                />
+                <CardMedia
+                  className={classes.media}
+                  image={trip.imgSrc}
+                />
+                <CardContent>
+                  <Typography variant="body2" color="textSecondary" component="span">
+                    This impressive paella is a perfect party dish and a fun meal to cook together with your
+                    guests. Add 1 cup of frozen peas along with the mussels, if you like.
                 </Typography>
-                <Typography component="span">
-                  <div style={{ display: "flex", justifyContent: "space-between" }}>
-                    <p>{trip.duration}</p>
-                    <p>₹ {trip.price}</p>
-                  </div>
-                </Typography>
-              </CardContent>
-            </Card>
+                  <Typography component="span">
+                    <div style={{ display: "flex", justifyContent: "space-between" }}>
+                      <p>{trip.duration}</p>
+                      <p>₹ {trip.price}</p>
+                    </div>
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Link>
           ))
 
         }

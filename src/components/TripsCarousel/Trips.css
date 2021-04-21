@@ -1,7 +1,5 @@
-.trip-content-container {
-    position: absolute;
-    width: 100%;
-    top: 0;
+.tripPreview a{
+    text-decoration: none;
 }
 .img-container {
     max-width: 100%;
