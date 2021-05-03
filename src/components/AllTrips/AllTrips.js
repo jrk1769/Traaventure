@@ -1,8 +1,8 @@
 import React from 'react'
-import useFetch from '../useFetch/useFetch'
 import "./AllTrips.css"
 import { Card, CardContent, CardHeader, CardMedia, makeStyles, Typography } from '@material-ui/core'
 import { Link } from 'react-router-dom'
+import trips from '../../assets/trips.json'
 
 /**
 * @author
@@ -10,8 +10,6 @@ import { Link } from 'react-router-dom'
 **/
 
 const AllTrips = () => {
-
-  const { data: trips, error: tripsErr, isLoading: tripsLoad } = useFetch('http://localhost:8000/trips');
 
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -40,12 +38,10 @@ const AllTrips = () => {
     <>
       <div className="allTripsImg"></div>
       <div className="tripContainer">
-        {tripsErr && <div>{tripsErr}</div>}
-        {tripsLoad && <div>Loading...</div>}
         {trips &&
           trips.map((trip) => (
-            <Link to={`/trips/${trip.id}`}>
-              <Card className={classes.root} key={trip.id} style={{ cursor: "pointer" }}>
+            <Link to={`/trips/${trip.id}`} key={trip.id}>
+              <Card className={classes.root} style={{ cursor: "pointer" }}>
                 <CardHeader
                   title={trip.title}
                   subheader={trip.date}

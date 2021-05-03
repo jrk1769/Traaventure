@@ -1,0 +1,22 @@
+[
+    {
+        "category": "All",
+        "id": 1
+    },
+    {
+        "category": "Watch",
+        "id": 2
+    },
+    {
+        "category": "Mobile",
+        "id": 3
+    },
+    {
+        "category": "Shoe",
+        "id": 4
+    },
+    {
+        "category": "Camera",
+        "id": 5
+    }
+]

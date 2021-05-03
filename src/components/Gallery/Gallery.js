@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import AnimatedModal from "../Modal/Modal";
-import useFetch from "../useFetch/useFetch";
 import "./Gallery.css";
+import images from '../../assets/images.json';
+import places from '../../assets/places.json';
 
 /**
  * @author
@@ -9,12 +10,6 @@ import "./Gallery.css";
  **/
 
 const Gallery = () => {
-  const { data: images, error: imagesErr, isLoading: imagesLoad } = useFetch(
-    "http://localhost:8000/images"
-  );
-  const { data: places, error: placesErr, isLoading: placesLoad } = useFetch(
-    "http://localhost:8000/places"
-  );
 
   const [filter, setFilter] = useState("All");
   const [items, setItems] = useState([]);
@@ -25,17 +20,16 @@ const Gallery = () => {
       [imageId]: !open[imageId],
     };
     setOpen(isOpen);
-    console.log("clicked");
   };
 
   useEffect(() => {
-    if (!imagesLoad && !imagesErr && images) {
+    if (images) {
       setItems(images);
     }
-  }, [images, imagesErr, imagesLoad]);
+  }, []);
 
   useEffect(() => {
-    if (!imagesLoad && !imagesErr && images) {
+    if (images) {
       setItems([]);
       const filtered = images.map((img) => ({
         ...img,
@@ -43,14 +37,13 @@ const Gallery = () => {
       }));
       setItems(filtered);
     }
-  }, [filter, images, imagesErr, imagesLoad]);
+  }, [filter]);
 
   return (
     <>
       <div className="backgrnd"></div>
       <section className="gallery-container">
-        {placesErr && <div>{placesErr}</div>}
-        {placesLoad && <div>Loading...</div>}
+        
         {places && (
           <ul>
             {places.map((place) => (
@@ -67,8 +60,7 @@ const Gallery = () => {
           </ul>
         )}
         <div className="gallery">
-          {imagesErr && <div>{imagesErr}</div>}
-          {imagesLoad && <div>Loading...</div>}
+          
           <div className="Images">
             {items.map((image) =>
               image.filtered === true ? (

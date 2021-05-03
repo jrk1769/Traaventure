@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router'
-import useFetch from '../useFetch/useFetch';
+import trip from "../../assets/trips.json";
 import "./TripDetails.css";
 
 
@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme) => ({
 const TripDetails = () => {
 
   const { id } = useParams();
-  const { data: trip, error, isLoading } = useFetch('http://localhost:8000/trips/' + id);
 
   // For itenary state and panel
   const classes = useStyles();
@@ -42,21 +41,23 @@ const TripDetails = () => {
 
   return (
     <div>
-      { isLoading && <div>Loading...</div>}
-      { error && <div>{error}</div>}
-      { trip &&
+      { trip[id - 1] &&
         <div>
           <div className="tripDetails">
-            <h1 className="imageTitle">{trip.title}</h1>
+            <h1 className="imageTitle">{trip[id - 1].title}</h1>
           </div>
-          <div class="main" style={{ margin: '20px' }}>
+          <div className="main" style={{ margin: '20px' }}>
             <h2>Overview</h2>
-            <p>{trip.description}</p>
+            <p>{trip[id - 1].description}</p>
             <div style={{ width: '50%' }} className={classes.root}>
               <h2>Itenary</h2>
               {
-                trip.itenary.map((day, index) => (
-                  <Accordion expanded={expanded === `panel_${index}`} onChange={handleChange(`panel_${index}`)}>
+                trip[id - 1].itenary.map((day, index) => (
+                  <Accordion 
+                  expanded={expanded === `panel_${index}`} 
+                  onChange={handleChange(`panel_${index}`)}
+                  key={index}
+                  >
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
                       aria-controls={`panel_${index}bh-content`}
@@ -68,8 +69,8 @@ const TripDetails = () => {
                     <AccordionDetails>
                       <ul style={{ textDecoration: "none" }}>
                         {
-                          day.description.map((desc) => (
-                            <li>{desc}</li>
+                          day.description.map((desc, index) => (
+                            <li key={index}>{desc}</li>
                           ))
                         }
                       </ul>
@@ -82,8 +83,12 @@ const TripDetails = () => {
               <div>
                 <h2>Inclusions</h2>
                 {
-                  trip.inclusions.map((inc, index) => (
-                    <Accordion expanded={expanded === `panel_${index}`} onChange={handleChange(`panel_${index}`)}>
+                  trip[id - 1].inclusions.map((inc, index) => (
+                    <Accordion
+                      expanded={expanded === `panel_${index}`}
+                      onChange={handleChange(`panel_${index}`)}
+                      key={index}
+                    >
                       <AccordionSummary
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls={`panel_${index}bh-content`}
@@ -94,8 +99,8 @@ const TripDetails = () => {
                       <AccordionDetails>
                         <ul>
                           {
-                            inc.description.map((desc) => (
-                              <li>{desc}</li>
+                            inc.description.map((desc, index) => (
+                              <li key={index}>{desc}</li>
                             ))
                           }
                         </ul>
@@ -108,8 +113,8 @@ const TripDetails = () => {
                 <h2>Exclusions</h2>
                 <ul>
                   {
-                    trip.exclusions.map((exc) => (
-                      <li>{exc}</li>
+                    trip[id - 1].exclusions.map((exc, index) => (
+                      <li key={index}>{exc}</li>
                     ))
                   }
                 </ul>
@@ -119,8 +124,8 @@ const TripDetails = () => {
               <h2><b>Note : </b></h2>
               <ul>
                 {
-                  trip.note.map((notes) => (
-                    <li>{notes}</li>
+                  trip[id - 1].note.map((notes, index) => (
+                    <li key={index}>{notes}</li>
                   ))
                 }
               </ul>

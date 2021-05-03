@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Nisha's Review",
+        "tripTo": "Manali",
+        "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+        "id": 1
+    },
+    {
+        "title": "Manish's Review",
+        "tripTo": "Manali",
+        "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+        "id": 2
+    },
+    {
+        "title": "Sirisha's Review",
+        "tripTo": "Leh Ladakh",
+        "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+        "id": 3
+    },
+    {
+        "title": "Nimisha's Review",
+        "tripTo": "Himachal",
+        "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+        "id": 4
+    },
+    {
+        "title": "Prisha's Review",
+        "tripTo": "Kulu",
+        "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+        "id": 5
+    },
+    {
+        "title": "Jigisha's Review",
+        "tripTo": "Kashmir",
+        "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+        "id": 6
+    },
+    {
+        "title": "Disha's Review",
+        "tripTo": "Ooty",
+        "review": "Most of us testers don’t like the word processor, isn’t it? For us, it either means a lot more work or some high-level managerial task that we have to do even if we don’t want to – for the sake of some compliance that we have no idea about.",
+        "id": 7
+    }
+]

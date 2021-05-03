@@ -1,12 +1,12 @@
 import Trips from "../TripsCarousel/Trips";
 import Testimonials from "../Testimonials/Testimonials"
-import useFetch from "../useFetch/useFetch";
 import "./HomeScreen.css";
+import trips from '../../assets/trips.json';
+import testimonials from '../../assets/testimonials.json';
 
 
 const HomeScreen = () => {
-  const { data: trips, error: tripErr, isLoading: tripLoad} = useFetch('http://localhost:8000/trips');
-  const { data: testimonials, error: testimonialsErr, isLoading: testimonialsLoad } = useFetch('http://localhost:8000/testimonials');
+
   return (
     <>
       <div className="homePageImg">
@@ -31,13 +31,9 @@ const HomeScreen = () => {
         </div>
       </div>
       <div className="tripsCarousel">
-        {tripErr && <div>{tripErr}</div>}
-        {tripLoad && <div>Loading...</div>}
         {trips && <Trips trips={trips} title="All Upcoming Trips" />}
       </div>
       <div className="testimonails">
-        {testimonialsErr && <div>{testimonialsErr}</div>}
-        {testimonialsLoad && <div>Loading...</div>}
         {testimonials && <Testimonials testimonials={testimonials} title="What People say" />}
       </div>
     </>

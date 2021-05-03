@@ -1,0 +1,162 @@
+[
+    {
+        "category": [
+            "All",
+            "Mobile"
+        ],
+        "imgSrc": "images/mobile1.jpg",
+        "id": 1
+    },
+    {
+        "category": [
+            "All",
+            "Mobile"
+        ],
+        "imgSrc": "../images/mobile2.jpg",
+        "id": 2
+    },
+    {
+        "category": [
+            "All",
+            "Mobile"
+        ],
+        "imgSrc": "../images/mobile3.jpg",
+        "id": 3
+    },
+    {
+        "category": [
+            "All",
+            "Mobile"
+        ],
+        "imgSrc": "../images/mobile4.jpg",
+        "id": 4
+    },
+    {
+        "category": [
+            "All",
+            "Mobile"
+        ],
+        "imgSrc": "../images/mobile5.jpg",
+        "id": 5
+    },
+    {
+        "category": [
+            "All",
+            "Camera"
+        ],
+        "imgSrc": "../images/camera1.jpg",
+        "id": 6
+    },
+    {
+        "category": [
+            "All",
+            "Camera"
+        ],
+        "imgSrc": "../images/camera2.jpg",
+        "id": 7
+    },
+    {
+        "category": [
+            "All",
+            "Camera"
+        ],
+        "imgSrc": "../images/camera3.jpg",
+        "id": 8
+    },
+    {
+        "category": [
+            "All",
+            "Headphone"
+        ],
+        "imgSrc": "../images/headphone1.jpg",
+        "id": 9
+    },
+    {
+        "category": [
+            "All",
+            "Headphone"
+        ],
+        "imgSrc": "../images/headphone2.jpg",
+        "id": 10
+    },
+    {
+        "category": [
+            "All",
+            "Headphone"
+        ],
+        "imgSrc": "../images/headphone3.jpg",
+        "id": 11
+    },
+    {
+        "category": [
+            "All",
+            "Headphone"
+        ],
+        "imgSrc": "../images/headphone4.jpg",
+        "id": 12
+    },
+    {
+        "category": [
+            "All",
+            "Shoe"
+        ],
+        "imgSrc": "../images/shoe1.jpg",
+        "id": 13
+    },
+    {
+        "category": [
+            "All",
+            "Shoe"
+        ],
+        "imgSrc": "../images/shoe2.jpg",
+        "id": 14
+    },
+    {
+        "category": [
+            "All",
+            "Shoe"
+        ],
+        "imgSrc": "../images/shoe3.jpg",
+        "id": 15
+    },
+    {
+        "category": [
+            "All",
+            "Shoe"
+        ],
+        "imgSrc": "../images/shoe4.jpg",
+        "id": 16
+    },
+    {
+        "category": [
+            "All",
+            "Watch"
+        ],
+        "imgSrc": "../images/watch1.jpg",
+        "id": 17
+    },
+    {
+        "category": [
+            "All",
+            "Watch"
+        ],
+        "imgSrc": "../images/watch2.jpg",
+        "id": 18
+    },
+    {
+        "category": [
+            "All",
+            "Watch"
+        ],
+        "imgSrc": "../images/watch3.jpg",
+        "id": 19
+    },
+    {
+        "category": [
+            "All",
+            "Watch"
+        ],
+        "imgSrc": "../images/watch4.jpg",
+        "id": 20
+    }
+]
