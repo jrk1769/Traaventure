@@ -13,8 +13,7 @@ const AllTrips = () => {
 
   const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 300,
-
+      margin: 10
     },
     media: {
       height: 0,

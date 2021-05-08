@@ -9,9 +9,14 @@
     align-items: center;
     position: relative;
 }
+.tripContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .tripContainer a{
     text-decoration: none;
+    width: 50%;
 }
 
 .tripPre {
