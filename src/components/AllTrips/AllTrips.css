@@ -1,47 +1,61 @@
 .allTripsImg {
-    height: 100vh;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../../images/world.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../../images/world.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.MuiCardHeader-content {
+    overflow: hidden;
+}
+.MuiTypography-displayBlock {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .tripContainer {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.tripContainer a{
-    text-decoration: none;
-    width: 50%;
+.tripContainer a {
+  text-decoration: none;
+  width: 50%;
 }
 
 .tripPre {
-    /* width: 95%; */
-    margin: auto;
-    display: flex;
+  /* width: 95%; */
+  margin: auto;
+  display: flex;
 }
 
 .trip-head-cont {
-    position: absolute;
-    display: block;
-    width: inherit;
-    text-align: center;
-    color: darkslategray;
-    text-shadow: 0px 1px 1px rgb(0 0 0);
+  position: absolute;
+  display: block;
+  width: inherit;
+  text-align: center;
+  color: darkslategray;
+  text-shadow: 0px 1px 1px rgb(0 0 0);
 }
 
 .trip-card-foot {
-    position: absolute;
-    bottom: 0;
-    width: inherit;
-    bottom: 30px;
-    display: flex;
-    font-weight: bold;
-    color: darkslategray;
-    text-shadow: 0px 1px 1px rgb(0 0 0);
-    justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  bottom: 30px;
+  display: flex;
+  font-weight: bold;
+  color: darkslategray;
+  text-shadow: 0px 1px 1px rgb(0 0 0);
+  justify-content: space-evenly;
 }
