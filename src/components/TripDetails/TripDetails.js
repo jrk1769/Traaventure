@@ -49,7 +49,7 @@ const TripDetails = () => {
           <div className="main" style={{ margin: '20px' }}>
             <h2>Overview</h2>
             <p>{trip[id - 1].description}</p>
-            <div style={{ width: '50%' }} className={classes.root}>
+            <div className={classes.root}>
               <h2>Itenary</h2>
               {
                 trip[id - 1].itenary.map((day, index) => (
@@ -79,7 +79,7 @@ const TripDetails = () => {
                 ))
               }
             </div>
-            <div style={{ width: '50%' }}>
+            <div>
               <div>
                 <h2>Inclusions</h2>
                 {

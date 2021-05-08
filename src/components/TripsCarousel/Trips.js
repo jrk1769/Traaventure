@@ -49,7 +49,7 @@ const Trips = ({ trips, title }) => {
           <div className="tripPreview" key={trip.id}>
             <Link to={`/trips/${trip.id}`}>
               <header className="trip-head-container">
-                <h2>{trip.title}</h2>
+                <h2 className="trip-title">{trip.title}</h2>
               </header>
               <section>
                 <img className="img-container" src={trip.imgSrc} alt={trip.alt} />
