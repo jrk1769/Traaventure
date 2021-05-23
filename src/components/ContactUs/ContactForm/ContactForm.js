@@ -16,8 +16,6 @@ const ContactForm = () => {
         message: ''
     });
 
-    const [submitted, setSubmitted] = useState(false);
-
     const handleNameInputChange = (e) => {
         e.persist();
         setValues((values) => ({
@@ -52,19 +50,43 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        const response = fetch("http://localhost:3001/send", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json",
+            },
+            body: JSON.stringify({ values })
+        })
+            .then((res) => res.json())
+            .then(async (res) => {
+                const resData = await res;
+                console.log(resData);
+                if(resData.status === "success") {
+                    alert("Message Sent");
+                } else if(resData.status === "fail") {
+                    alert("Message failed");
+                }
+            })
+            .then(() => {
+                setValues({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    message: ''
+                })
+            })
     };
 
     return (
         <div className="registerForm">
             <h2 className="formHeading">We Will call you</h2>
-            <form id="contact-form" onSubmit={handleSubmit} encType="multipart/form-data">
+            <form id="contact-form" onSubmit={handleSubmit}>
                 <input
                     type="text"
                     name="name"
                     placeholder="Enter your Name"
                     value={values.name}
-                    onChange={handleNameInputChange} 
+                    onChange={handleNameInputChange}
                     required
                 />
                 <input
@@ -93,9 +115,10 @@ const ContactForm = () => {
                 />
                 <Button type="submit">Submit</Button>
             </form>
-            {submitted && <div class='success-message'>Success! Thank you for registering</div>}
+            
         </div>
     )
-}
+};
+
 
 export default ContactForm

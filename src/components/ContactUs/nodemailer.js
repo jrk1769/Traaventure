@@ -1,22 +1,13 @@
+var express = require('express');
 var nodemailer = require('nodemailer');
+var cors = require('cors');
 
-const form = document.getElementById("contact-form");
+const app = express();
 
-const formEvent = form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    let mail = new FormData(form);
-    sendMail(mail);
-});
+app.post('/send', (req, res) => {
+    console.log(req.body);
+})
 
-const sendMail = (mail) => {
-    fetch("http://localhost:3000/send", {
-        method: "POST",
-        body: mail
-    })
-    .then((res) => {
-        return res.json();
-    })
-}
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
